@@ -53,7 +53,7 @@ const Home = (): JSX.Element => {
         return (
 
           
-          <li>
+          <li key={product.id}>
             <img src={product.image}/>
             <strong>{product.title}</strong>
             <span>{product.price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL'})}</span>
